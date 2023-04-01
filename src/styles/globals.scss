@@ -1,0 +1,79 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap";
+@import "./mixins";
+
+:root {
+  --black: #111719;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --yellow: #e1ad01;
+  --light-gray: #d9d9d9;
+  --red: #dc3545;
+  --red-secondary: #b02a37;
+  --green: #198754;
+  --green-secondary: #157347;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--white);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: inherit;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+}

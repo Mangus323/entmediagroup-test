@@ -1,0 +1,72 @@
+@import "src/styles/mixins";
+
+.container {
+  border-radius: 8px;
+  outline: none;
+  transition: 0.1s background-color;
+
+  &:disabled {
+    cursor: unset;
+  }
+}
+
+.container__black {
+  background-color: var(--black);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--gray);
+  }
+}
+
+.container__green {
+  background-color: var(--green);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--green-secondary);
+  }
+}
+
+.container__danger {
+  background-color: var(--red);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--red-secondary);
+  }
+}
+
+.container__large {
+  @include FontTitle;
+
+  height: 40px;
+  padding: 0 16px;
+
+  @include ForTablet {
+    height: 45px;
+  }
+
+  @include ForDesktop {
+    height: 50px;
+  }
+}
+
+.container__medium {
+  @include FontParagraph;
+
+  height: 35px;
+  padding: 0 12px;
+
+  @include ForTablet {
+    height: 40px;
+  }
+
+  @include ForDesktop {
+    height: 45px;
+  }
+}
+
+.container__block {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+@import "src/styles/mixins";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  @include ForTablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include ForDesktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}

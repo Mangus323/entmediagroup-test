@@ -1,0 +1,28 @@
+@import "src/styles/mixins";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+
+  & > * {
+    width: 100%;
+  }
+
+  @include ForTablet {
+    justify-content: flex-start;
+
+    & > * {
+      width: unset;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+
+  @include ForTablet {
+    width: 90px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "src/styles/mixins";
+
+.container {
+  color: var(--black);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.title {
+  @include FontTitle;
+}
+
+.brand {
+  @include FontParagraph;
+}

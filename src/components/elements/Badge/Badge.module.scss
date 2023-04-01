@@ -1,0 +1,25 @@
+@import "src/styles/mixins";
+
+.container {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  text-transform: capitalize;
+  margin-left: 4px;
+}
+
+.container__new {
+  color: var(--white);
+  background-color: var(--gray);
+}
+
+.container__top {
+  color: var(--white);
+  background-color: var(--yellow);
+}

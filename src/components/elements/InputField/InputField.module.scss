@@ -1,0 +1,28 @@
+@import "src/styles/mixins";
+
+.input {
+  @include FontParagraph;
+
+  height: 35px;
+  padding: 0 12px;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.1s background-color;
+  border: 1px solid;
+
+  @include ForTablet {
+    height: 40px;
+  }
+
+  @include ForDesktop {
+    height: 45px;
+  }
+
+  &:disabled {
+    cursor: unset;
+  }
+
+  &:focus-visible {
+    border: 1px solid var(--gray);
+  }
+}
